@@ -1,8 +1,7 @@
 <template>
   <h2>Album</h2>
 
-  <router-link style="margin-right: 20px" to="/photo/1">1 Photo</router-link>
-  <router-link to="/photo/2">2 Photo</router-link>
+  <router-link style="margin-right: 20px"  v-for="i in 10" :to="`/photo/${i}`" :key="i">{{ i }} Photo</router-link>
 </template>
 
 <script>
